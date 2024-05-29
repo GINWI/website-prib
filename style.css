@@ -1,0 +1,245 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #971414;
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.logo-img:hover{
+    transform: rotate(360deg);
+}
+
+.logo-title{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo-title:hover{
+    color: #54d1e7;
+    transform: rotate(360deg);
+}
+
+nav ul{
+    display: flex;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+a:hover{
+    color: #54d1e7;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+a{
+    color: #eaeaea;
+    text-decoration: none;
+    transition: all .5s ease 0s;
+}
+
+.btn-cta{
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: #54d1e7;
+    color: #eaeaea;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-cta:hover{
+    color: #222;
+    text-shadow: 1px 3px rgba(255, 255, 255, 0.425);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px ;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.img-foto{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax{
+    background-image: url(assets/foto/kakashi.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tentang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #971414;
+    color: #eaeaea;
+    padding: 40px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item{
+    width: 25%;
+    background-color: #f7f7f7;
+    color: #222;
+    padding: 20px;
+    box-shadow: 5px 5px 2px rgba(0,0,0,.5);
+    text-align: center;
+    min-height: 200px;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-description{
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #54d1e7;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width:500px){
+    .logo-title{
+        font-size: 1em;
+    }
+
+    .btn-cta{
+        font-size: .9em;
+    }
+
+    .title{
+        font-size: 1em;
+    }
+
+    .description{
+        font-size: .9em;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item{
+        width: 100%;
+        background: none;
+        box-shadow: none;
+    }
+
+    .card-title{
+        text-shadow: 2px 2px 2px #eaeaea;
+    }
+
+    .card-description{
+        text-shadow: 2px 2px 2px #eaeaea;
+        font-weight: bold;
+    }
+
+    .img-foto{
+        padding: 0;
+    }
+
+    .intro{
+        margin-top: 20px;
+    }
+
+    nav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 5px;
+        z-index: 999999;
+        background-color: #971414;
+    }
+
+    footer{
+        margin-top: 70px;
+        position: relative;
+        bottom: 85px;
+    }
+}
